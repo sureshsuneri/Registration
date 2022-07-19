@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popinns',sans-serif;
+}
+
+:root{
+    --primary-color:rgb(20, 20, 241);
+    --white-color:#fff;
+    --light-grey:rgb(202, 199, 199);
+    --black-color:#1d1d1f;
+
+    
+}
+
+body{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    padding: 50px 25px 0;
+    max-width: 700px;
+    width: 100%;
+    margin:auto;
+}
+
+.container::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image:url("images/mohamed-ahsan-UQXF_w83Z5s-unsplash.jpg");
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+    
+
+
+}
+.container .headline{
+    text-align: center;
+    padding-bottom:48px;
+
+}
+.container .headline h1{
+    font-size: 42px;
+    font-weight: 600;
+    font-family: serif;
+    color: #fffff0;
+
+}
+.container .from-group{
+    margin-bottom: 15px;
+}
+.container .from-group input{
+    display:block;
+    font-size:15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 45px;
+    color: blue;
+    border-radius: 1fr;
+    box-shadow: burlywood;
+    width: 60%;
+
+}
+.container .from-group input::placeholder{
+    color:var( --black-color);
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container .btn{
+    width:60%;
+    margin: 15px 0 30px;
+    font-family:13px;
+    line-height: 22px;
+    font-weight: 700px;
+    padding: 12px 29px;
+    height: 45px;
+    text-transform: uppercase;
+    color:var(--white-color);
+    background-color:var(--primary-color);
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align:center;
+
+
+}
+.container .form{
+    margin-left:150px;
+    margin-top:22px;
+
+}
+.signup.inActive{
+    display:none;
+
+}
+
+.signin{
+    display:none;
+
+}
+.signin.active{
+    display:block;
+
+}
+
+@media(max-width:767px){
+    .signin, .signup{
+        align-items:center;
+        margin-left:-40;
+        margin-right:50%;
+
+
+    }
+
+    .container .from-group input{
+        width:100%;
+
+    }
+    .container .btn{
+        width:100%;
+
+    }
+}
